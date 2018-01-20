@@ -29,7 +29,7 @@
 		<p>Also, the script saves the supplied information via cookies, which means you won't have to type in that information each time you want a number on your profit. You simply load this webpage and it'll tell you straight away!</p>
 		<p>What if you've recently increased your investment? No worries, simply update the text-values to the right and hit submit!</p>
 		">?</a>
-		<a class="btn" style="padding: 7px 11px;" href="https://github.com/condolent" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+		<a class="btn" style="padding: 7px 11px;" href="https://github.com/condolent/EthCalc" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
 	</div>
 	
 	<div class="textinputs">
