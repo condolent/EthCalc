@@ -1,7 +1,5 @@
 $(document).ready(function() {
 	
-	//var input = 40; // What I have put in
-	//var coins = 0.03741658; // How many coins I currently have
 	var input; // What I have put in
 	var coins; // How many coins I currently have
 	var submit = $("#submit");
@@ -50,7 +48,6 @@ $(document).ready(function() {
 				
 				if(profit < 0) {
 					percent.css("color", "#b54d4d");
-					//percent.append(" :(");
 				} else {
 					percent.css("color", "#4db559");
 				}
