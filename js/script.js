@@ -4,7 +4,7 @@ $(document).ready(function() {
 	var coins; // How many coins I currently have
 	var submit = $("#submit");
 	
-	if(Cookies.get("coins") || Cookies.get("input")) {
+	if(Cookies.get("coins") && Cookies.get("input")) {
 		input = Cookies.get("input");
 		coins = Cookies.get("coins");
 		$("#input").val(input);
@@ -16,10 +16,12 @@ $(document).ready(function() {
 	submit.click(function(){
 		input = $("#input").val();
 		coins = $("#coins").val();
-		call();
 		
-		Cookies.set("input", input);
-		Cookies.set("coins", coins);
+		Cookies.set("input", input, { expires: 365 });
+		Cookies.set("coins", coins, { expires: 365 });
+		
+		
+		call();
 	});
 	
 	function call() {

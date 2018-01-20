@@ -2,8 +2,8 @@
 <head>
 	<title>EthCalc</title>
 	
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/font-awesome/css/font-awesome.min.css">
 	<link rel="icon" href="https://files.coinmarketcap.com/static/img/coins/32x32/ethereum.png"/>
 </head>
 <body>
@@ -45,7 +45,7 @@
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
-	<script src="script.js"></script>
-	<script src="modal.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/modal.js"></script>
 </body>
 </html>
