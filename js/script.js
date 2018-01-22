@@ -17,16 +17,25 @@ $(document).ready(function() {
 		
 		inputField.val(input);
 		coinsField.val(coins);
-		feeField.val(fee);
+		if(fee != "") {
+			feeField.val(fee + "%");
+		} else {
+			feeField.val("");
+		}
 		
 		call();
 	}
 	
 	submit.click(function() {
 		if(inputField.val() != "" && coinsField.val() != "") {
-			input = inputField.val();
-			coins = coinsField.val();
-			fee = feeField.val();
+			input = inputField.val().replace(",", ".");
+			inputField.val(input);
+			
+			coins = coinsField.val().replace(",", ".");
+			coinsField.val(coins);
+			
+			fee = feeField.val().replace(",", ".").replace("%", "");
+			feeField.val(fee + (feeField.val() != "" ? "%" : ""));
 			
 			Cookies.set("input", input, { expires: 365 });
 			Cookies.set("coins", coins, { expires: 365 });
@@ -76,7 +85,7 @@ $(document).ready(function() {
 				
 				
 			},
-				error: function(jqXHR, textStatus, errorThrown) {
+			error: function(jqXHR, textStatus, errorThrown) {
 				console.log("Error talking with the API");
 				console.log(jqXHR.status);
 			},
