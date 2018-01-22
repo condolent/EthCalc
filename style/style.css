@@ -126,18 +126,32 @@ h2 {
 
 /* Modal Footer */
 .modal-footer {
-	text-align: right;
     padding: 15px 16px;
     color: white;
 	border-top: 1px solid rgba(0,0,0,.2);
 }
+.modal-footer p {
+	color: black;
+	font-family: dinotlight;
+	text-align: left;
+	vertical-align: middle;
+	display: inline-block;
+	margin: 0;
+	font-size: 14px;
+	font-style: italic;
+}
 .modal-footer a.button {
+	text-align: right;
+	float: right;
+	display: inline-block;
 	padding: 4px 12px;
 	color: black;
 	border: 1px solid rgba(0,0,0,.2);
 	border-radius: 5px;
 	transition: .1s background;
 	cursor: pointer;
+	top: -7px;
+	position: relative;
 }
 .modal-footer a.button:hover {
 	background: #E6E6E6;
@@ -166,7 +180,9 @@ input[type=text] {
 input[type=text]:focus {
 	box-shadow: 0 0 10px rgba(15,227,255,.7);
 }
-
+label {
+	text-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
 button {
 	padding: 4px 12px;
 	color: black;

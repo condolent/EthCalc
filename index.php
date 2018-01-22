@@ -1,10 +1,21 @@
 <html>
 <head>
-	<title>EthCalc</title>
+	<title>EthCalc - Calculate your profits of Ethereum investments</title>
 	
 	<link rel="stylesheet" href="style/style.css">
 	<link rel="stylesheet" href="style/font-awesome/css/font-awesome.min.css">
+	
+	<!-- MISC -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="https://files.coinmarketcap.com/static/img/coins/32x32/ethereum.png"/>
+	<meta name="robots" content="index,follow" />
+	
+	<!-- META TAGS -->
+	<meta name="description" content="Calculate your profits or loss of your Ethereum purchases/investments. Keep track of your investment!" />
+	<meta name="keywords" content="ethereum,coin,crypto,currency,cryptocurrency,profit,calculator" />
+	<meta name="author" content="Jonathan Öhrström" />
+	
+	<meta property="og:url" content="https://condolent.xyz/eth">
 </head>
 <body>
 	<div class="modal">
@@ -15,6 +26,7 @@
 			</div>
 			<div class="modal-body"></div>
 			<div class="modal-footer">
+				<p>Version 1.2</p>
 				<a class="button closer">Close</a>
 			</div>
 		</div>
@@ -37,6 +49,8 @@
 		<input id="input" type="text" placeholder="€ Input" /><br />
 		<label for="coins">Amount of ETH</label>
 		<input id="coins" type="text" placeholder="# Coins" /><br />
+		<label for="fee">Transactional fee (optional)</label>
+		<input id="fee" type="text" placeholder="Transactional fee in %" /><br />
 		<button id="submit" value="Submit">Submit</button>
 	</div>
 	
