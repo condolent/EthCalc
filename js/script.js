@@ -37,9 +37,9 @@ $(document).ready(function() {
 			fee = feeField.val().replace(",", ".").replace("%", "");
 			feeField.val(fee + (feeField.val() != "" ? "%" : ""));
 			
-			Cookies.set("input", input, { expires: 365 });
-			Cookies.set("coins", coins, { expires: 365 });
-			Cookies.set("fee", fee, { expires: 365 });
+			Cookies.set("input", input, { expires: 365, path: '' });
+			Cookies.set("coins", coins, { expires: 365, path: '' });
+			Cookies.set("fee", fee, { expires: 365, path: '' });
 			
 			call();
 		} else {

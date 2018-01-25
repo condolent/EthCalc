@@ -2,7 +2,7 @@
 <head>
 	<title>EthCalc - Calculate your profits of Ethereum investments</title>
 	
-	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/style.min.css">
 	<link rel="stylesheet" href="style/font-awesome/css/font-awesome.min.css">
 	
 	<!-- MISC -->
