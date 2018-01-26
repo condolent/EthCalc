@@ -26,7 +26,7 @@
 			</div>
 			<div class="modal-body"></div>
 			<div class="modal-footer">
-				<p>Version 1.3</p>
+				<p>Version 1.4</p>
 				<a class="button closer">Close</a>
 			</div>
 		</div>
@@ -42,6 +42,7 @@
 		<p>What if you've recently increased your investment? No worries, simply update the text-values to the right and hit submit!</p>
 		">?</a>
 		<a class="btn" style="padding: 7px 11px;" href="https://github.com/condolent/EthCalc" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+		<a id="twitter" class="btn" style="padding: 7px 11px;" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 	</div>
 	
 	<div class="textinputs">

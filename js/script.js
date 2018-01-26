@@ -1,5 +1,8 @@
 $(document).ready(function() {
 	
+	var twitter = $("#twitter");
+	twitter.attr("href", "https://twitter.com/intent/tweet?text=Check%20out%20this%20online%20Ethereum%20profit%20calculator! >> https://condolent.xyz/eth");
+	
 	var input; // What I have put in
 	var coins; // How many coins I currently have
 	var fee; // Optional transactional fee to include
@@ -83,6 +86,7 @@ $(document).ready(function() {
 					percent.css("color", "#4db559");
 				}
 				
+				twitter.attr("href", "https://twitter.com/intent/tweet?text=I%20just%20found%20out%20that%20my%20Ethereum%20investment%20has%20changed%20by%20" + profit.toFixed(2) + "%25%20since%20my%20first%20investment!%20Check%20your%20real-time%20profit%20on%20EthCalc%20-%3E%20https://condolent.xyz/eth");
 				
 			},
 			error: function(jqXHR, textStatus, errorThrown) {
@@ -94,4 +98,3 @@ $(document).ready(function() {
 	}
 	
 });
-
