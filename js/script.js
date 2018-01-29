@@ -1,5 +1,9 @@
 $(document).ready(function() {
 	
+	setInterval(repeater, 10000);
+	
+	var ready = false;
+	
 	var twitter = $("#twitter");
 	twitter.attr("href", "https://twitter.com/intent/tweet?text=Check%20out%20this%20online%20Ethereum%20profit%20calculator! >> https://condolent.xyz/eth");
 	
@@ -26,6 +30,8 @@ $(document).ready(function() {
 			feeField.val("");
 		}
 		
+		ready = true;
+		
 		call();
 	}
 	
@@ -44,11 +50,19 @@ $(document).ready(function() {
 			Cookies.set("coins", coins, { expires: 365, path: '' });
 			Cookies.set("fee", fee, { expires: 365, path: '' });
 			
+			ready = true;
+			
 			call();
 		} else {
 			alert('You must fill in the input and coins-field!');
+			ready = false;
 		}
 	});
+	
+	function repeater() {
+		if(ready == true)
+			call();
+	}
 	
 	function call() {
 		$.ajax({

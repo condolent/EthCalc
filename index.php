@@ -26,7 +26,7 @@
 			</div>
 			<div class="modal-body"></div>
 			<div class="modal-footer">
-				<p>Version 1.4</p>
+				<p>Version 1.5</p>
 				<a class="button closer">Close</a>
 			</div>
 		</div>
