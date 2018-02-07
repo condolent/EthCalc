@@ -26,7 +26,7 @@
 			</div>
 			<div class="modal-body"></div>
 			<div class="modal-footer">
-				<p>Version 1.5</p>
+				<p>Version 1.6</p>
 				<a class="button closer">Close</a>
 			</div>
 		</div>
@@ -46,8 +46,13 @@
 	</div>
 	
 	<div class="textinputs">
-		<label for="input">Input in €</label>
-		<input id="input" type="text" placeholder="€ Input" /><br />
+		<label for="input">Cost</label><br>
+		<input id="input" type="text" placeholder="€ Input" style="width:80%;"/>
+		<select style="widtH:19%" id="currency">
+			<option value="EUR">EUR</option>
+			<option value="USD">USD</option>
+		</select>
+		<br />
 		<label for="coins">Amount of ETH</label>
 		<input id="coins" type="text" placeholder="# Coins" /><br />
 		<label for="fee">Transactional fee (optional)</label>
