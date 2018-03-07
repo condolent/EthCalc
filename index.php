@@ -3,11 +3,11 @@
 	<title>EthCalc - Calculate your profits of Ethereum investments</title>
 	
 	<link rel="stylesheet" href="style/style.min.css">
-	<link rel="stylesheet" href="style/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style/fonts/font-awesome/css/font-awesome.min.css">
 	
 	<!-- MISC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="https://files.coinmarketcap.com/static/img/coins/32x32/ethereum.png"/>
+	<link rel="icon" href="https://condolent.xyz/eth/ethereum.png"/>
 	<meta name="robots" content="index,follow" />
 	
 	<!-- META TAGS -->
@@ -26,7 +26,7 @@
 			</div>
 			<div class="modal-body"></div>
 			<div class="modal-footer">
-				<p>Version 1.6</p>
+				<p>Version 1.6.3</p>
 				<a class="button closer">Close</a>
 			</div>
 		</div>
@@ -47,14 +47,23 @@
 	
 	<div class="textinputs">
 		<label for="input">Cost</label><br>
-		<input id="input" type="text" placeholder="€ Input" style="width:80%;"/>
-		<select style="widtH:19%" id="currency">
+		<input id="input" type="text" placeholder="Total cost of coins" style="width:80%;"/>
+		<select style="width:19%" id="currency">
 			<option value="EUR">EUR</option>
 			<option value="USD">USD</option>
+			<option value="GBP">GBP</option>
+			<option value="SEK">SEK</option>
 		</select>
 		<br />
 		<label for="coins">Amount of ETH</label>
-		<input id="coins" type="text" placeholder="# Coins" /><br />
+		<input id="coins" type="text" placeholder="# Coins" style="width: 80%;"/>
+		<select style="width: 19%" id="coin">
+			<option value="ETH">ETH</option>
+			<option value="BTC">BTC</option>
+			<option value="XRP">XRP</option>
+			<option value="LTC">LTC</option>
+		</select>
+		<br/>
 		<label for="fee">Transactional fee (optional)</label>
 		<input id="fee" type="text" placeholder="Transactional fee in %" /><br />
 		<button id="submit" value="Submit">Submit</button>
